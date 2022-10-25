@@ -1,0 +1,76 @@
+@use "../abstract" as *;
+
+.bg-banner {
+  min-height: 820px;
+}
+
+.banner-area {
+  min-height: 820px;
+  background: $bg-3;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  & span {
+    color: $theme-color;
+    font-size: 16px;
+  }
+
+  & h1 {
+    color: $black;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -3px;
+  }
+}
+
+.banner-action {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.banner-navigation i {
+  font-size: 18px;
+}
+
+//Slide
+
+.slide-img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner-img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+
+  &:before {
+    background-image: -moz-linear-gradient(0deg,
+        rgb(248, 248, 248) 0%,
+        rgba(248, 248, 248, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg,
+        rgb(248, 248, 248) 0%,
+        rgba(248, 248, 248, 0) 100%);
+    background-image: -ms-linear-gradient(0deg,
+        rgb(248, 248, 248) 0%,
+        rgba(248, 248, 248, 0) 100%);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

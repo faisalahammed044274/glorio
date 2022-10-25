@@ -1,0 +1,183 @@
+@use "../abstract" as *;
+
+.appoinment_area {
+  background: #ddd;
+  min-height: 682px;
+  max-width: 100%;
+}
+
+.appoinment-content {
+  h2 {
+    font-size: 65px;
+    color: #1e2223;
+    font-family: bitter;
+    line-height: -3px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $grey-2;
+    font-family: $plus-jakarta;
+  }
+
+  .appointment-icon-bg {
+    height: 80px;
+    width: 80px;
+    background: $white;
+    border-radius: 50%;
+    min-width: 80px;
+    position: relative;
+    margin: 0 30px;
+  }
+
+  .appoinment-form-bg {
+    background: #ffffff;
+    height: 450px;
+    width: 500px;
+    z-index: 2;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+}
+
+.bg-icon {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  z-index: -1;
+}
+
+.appointment-details {
+  display: flex;
+  gap: 30px;
+}
+
+
+.from-group {
+  padding: 10px 80px;
+}
+
+.image44 {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.appoint-room-tour {
+  p {
+    color: #000;
+    font-size: 16px;
+    font-family: plus-jakarta;
+    margin-top: 10px;
+  }
+
+  span {
+    color: $theme-color;
+    font-size: 16px;
+    font-weight: 600;
+
+    a {
+      border-bottom: 1px solid $theme-color;
+    }
+  }
+}
+
+
+//form
+
+.appointment-form-wrapper {
+  padding: 50px;
+}
+
+
+.appointment-input {
+  position: relative;
+}
+
+.appointment-input input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid $border-3;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.appointment-input i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+
+.appointment-check input {
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  outline: none;
+}
+
+.appointment-subject .nice-select {
+  width: 100%;
+}
+
+.appointment-subject .nice-select {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+}
+
+.appointment-submit {
+  a {
+    width: 100%;
+  }
+}
+
+.appointment-subject .nice-select::after {
+  border-bottom: 2px solid $black-2;
+  border-right: 2px solid $black-2;
+  height: 10px;
+  right: 20px;
+  width: 10px;
+  color: $black-2;
+}
+
+.check-in i {
+  top: 40%;
+  right: 10px;
+  position: absolute;
+}
+
+.check-in {
+  position: relative;
+}
+
+.check-out i {
+  top: 40%;
+  right: 10px;
+  position: absolute;
+}
+
+.check-out {
+  position: relative;
+}
+
+.appoinment-content .core {
+  color: #aa8453;
+}
+
+.appointment-details {
+  position: relative;
+}
+
+.appointment-icon-bg::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 20px;
+  top: 40px;
+  left: 115%;
+  background: #aa8453;
+}

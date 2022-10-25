@@ -1,0 +1,62 @@
+@use "../abstract" as *;
+
+.test-area {
+    .area-heading {
+        span {
+            color: $theme-color;
+            font-size: 16px;
+            font-family: $plus-jakarta;
+        }
+
+        h2 {
+            font-size: 60px;
+            font-family: $bitter;
+            color: $black-2;
+        }
+
+    }
+}
+
+.test-content {
+    padding: 0px 40px;
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.quote-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.test-user {
+    display: flex;
+    gap: 20px;
+}
+
+
+.testimonial-pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.testimonial-pagination span {
+    width: 25px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.user-detail p {
+    margin: 0;
+}
+
+.test-stars-icons {
+    i {
+        color: $theme-color;
+    }
+}

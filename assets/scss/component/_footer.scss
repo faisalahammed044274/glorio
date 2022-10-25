@@ -1,0 +1,93 @@
+@use "../abstract" as *;
+
+footer {
+    background: $bg-2;
+
+    .footer-link {
+        ul {
+            display: flex;
+            flex-direction: inherit;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                color: $grey-2;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer-widget-title {
+        h5 {
+            font-size: 14px;
+            line-height: 3px;
+            letter-spacing: 5px;
+            font-family: $plus-jakarta;
+            color: $black-2;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .footer-contact-link {
+
+        ul {
+            margin-bottom: 25px;
+
+            li {
+                font-size: 14px;
+                color: $grey-2;
+                font-size: 14px;
+                margin-bottom: 10px;
+
+                i {
+                    margin-right: 20px;
+                }
+            }
+
+        }
+
+        .btn {
+            margin-top: 5px;
+        }
+    }
+
+    .footer-social-icon {
+        font-size: 13px;
+        color: $grey;
+
+        & ul li {
+            margin-right: 40px;
+
+            :hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .footer-bottom-area {
+
+        font-size: 14px;
+        color: grey;
+        border-top: 1px solid $border-2;
+        padding: 10px 0;
+
+        .copyright-area p {
+            font-size: 14px;
+        }
+    }
+
+    .copyright-area {
+        span {
+            color: $theme-color;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        i {
+            font-size: 14px;
+        }
+    }
+
+}

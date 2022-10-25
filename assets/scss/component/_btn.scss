@@ -1,0 +1,30 @@
+@use "../abstract" as *;
+
+.btn {
+  color: $white;
+  padding: 15px 35px;
+  background: $btn-2;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+
+  &:hover {
+    background: $bg-1;
+    color: $white;
+    border: none;
+  }
+}
+.btn-2 {
+  color: $white;
+  padding: 15px 40px;
+  background: $bg-1;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+
+  &:hover {
+    background: $btn-2;
+    color: $white;
+    border: none;
+  }
+}

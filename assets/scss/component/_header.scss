@@ -1,0 +1,103 @@
+@use "../abstract" as *;
+
+// Header Top Area Start
+.header-top-inner {
+  background: $bg-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $plus-jakarta;
+}
+
+.meta-item-text {
+  p {
+    color: $white;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: $plus-jakarta;
+
+    span {
+      color: $span-text;
+    }
+  }
+}
+
+.meta-item-icon {
+  color: $icon-color;
+}
+
+.meta-item {
+  display: flex;
+  gap: 10px;
+}
+
+.header-top-left .meta-items {
+  display: flex;
+  gap: 40px;
+}
+
+.header-top-right .meta-items {
+  display: flex;
+  gap: 30px;
+  padding-left: 20px;
+
+  & input {
+    background: $icon-color;
+    font-size: 14px;
+  }
+}
+
+
+.header-top-area {
+  background: $bg-1;
+
+  & .container {
+    max-width: 1680px;
+  }
+}
+
+// Header Top Area End
+
+// Header bottom Area Start
+
+.main-menu ul li {
+  margin-left: 60px;
+  display: inline-block;
+  padding: 42px 0;
+  text-align: center;
+}
+
+
+.search {
+  img {
+    width: 22px;
+  }
+}
+
+.more {
+  img {
+    width: 30px;
+  }
+}
+
+.header-bottom-area {
+  background: $white;
+  box-shadow: 3px 4px 6px lightgrey;
+  font-family: $plus-jakarta;
+
+  & .container {
+    max-width: 1680px;
+  }
+}
+
+.header-right {
+  display: flex;
+  gap: 40px;
+}
+
+.header-action {
+  display: flex;
+  gap: 20px;
+}
+
+// Header bottom Area End

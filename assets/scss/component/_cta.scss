@@ -1,0 +1,73 @@
+@use "../abstract" as *;
+
+.cta-bg-1 {
+  height: 160px;
+  box-shadow: 2px 7px 8px rgb(211, 211, 211, 0.5);
+  background: $theme-color;
+  overflow: hidden;
+}
+
+.cta-icon {
+  position: absolute;
+	right: -20px;
+	bottom: -15px;
+  img {
+    width: 150px;
+  }
+}
+
+
+.cta-bg-2 {
+  height: 160px;
+  background: #ffffff;
+  box-shadow: 2px 7px 8px rgb(211, 211, 211, 0.3);
+  svg {
+    margin-top: 25px;
+    color: $theme-color;
+  }
+}
+
+.cta-content {
+  padding: 30px ;
+  h3 {
+    color: $white;
+  }
+
+  p {
+    color: #cfb18c;
+  }
+}
+
+.banner-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 566;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-navigation button {
+  height: 50px;
+  width: 50px;
+  background: $theme-color;
+  color: $white;
+}
+
+.cta-area {
+  position: relative;
+  top: -80px;
+  z-index: 300;
+}
+
+.cta-item {
+  padding: 50px;
+}
+.cta-item svg {
+  margin-bottom: 15px;
+}
+.cta-item p {
+  color: $black;
+  font-size: 16px;
+}

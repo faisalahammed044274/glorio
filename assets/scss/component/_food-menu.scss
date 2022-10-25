@@ -1,0 +1,61 @@
+@use "../abstract" as *;
+
+.food-menu-area {
+  text-align: center;
+  .food-menu-heading {
+    span {
+      color: $theme-color;
+      font-size: 16px;
+      font-family: $plus-jakarta;
+    }
+    h2 {
+      font-size: 60px;
+      font-weight: 600;
+      font-family: $bitter;
+    }
+  }
+}
+
+.menu-items {
+  display: flex;
+  gap: 50px;
+  .menu-item {
+    align-items: center;
+    border-bottom: 1px solid $border-2;
+    &:last-child {
+      border-bottom: none;
+    }
+    .menu-thumb {
+      margin-right: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .menu-content {
+      margin-right: 100px;
+      text-align: left;
+      h4 {
+        font-size: 20px;
+        font-family: $bitter;
+        color: $black-2;
+      }
+      p {
+        font-size: 14px;
+        font-family: $plus-jakarta;
+      }
+    }
+    .menu-action {
+      height: 20px;
+      width: 43px;
+      text-align: center;
+      span {
+        min-width: 200px;
+        border-radius: 30%;
+        background: $theme-color;
+        color: $black;
+        font-weight: 600;
+        padding: 10px;
+        color: $white;
+      }
+    }
+  }
+}

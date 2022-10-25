@@ -1,0 +1,22 @@
+@use "../abstract" as *;
+
+.brand-thumb {
+  padding: 40px 70px;
+  border: 1px solid $grey-3;
+  border-right: 0;
+}
+
+.brand-thumb:last-child {
+  border-right: 1px solid $grey-3;
+}
+
+.brand-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+p {
+  color: $btn-1;
+  font-size: 20px;
+  font-family: $bitter;
+}

@@ -1,0 +1,92 @@
+@use "../abstract" as *;
+
+.about-content {
+  span {
+    color: $theme-color;
+    text-align: left;
+    font-size: 14px;
+    font-family: $plus-jakarta;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: $plus-jakarta;
+    color: $grey-2;
+    margin-bottom: 50px;
+  }
+}
+
+.about-content-wrapper {
+  margin-left: 90px;
+}
+
+.about-thumb img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.about-batch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-batch span {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+}
+
+.about-calender {
+  .vanilla-calendar {
+    background-color: transparent;
+    border-radius: 0;
+    border: solid 1px #ededed;
+    box-shadow: none;
+    margin: inherit;
+    overflow: hidden;
+    width: 480px;
+  }
+}
+
+.vanilla-calendar .vanilla-calendar-header {
+  padding: 16px;
+  text-transform: capitalize;
+  background: $theme-color;
+}
+
+.vanilla-calendar{
+  .vanilla-calendar-week {
+    background-color: transparent;
+    padding: 0 20px;
+  }
+}
+
+.vanilla-calendar .vanilla-calendar-week span {
+  color: $black;
+}
+.vanilla-calendar .vanilla-calendar-date--selected {
+  background-color: $theme-color;
+}
+
+.vanilla-calendar .vanilla-calendar-header {
+  color: #fff;
+}
+
+.vanilla-calendar .vanilla-calendar-header svg {
+  fill: #fff;
+}
+
+.vanilla-calendar-body {
+  padding: 0 20px;
+}
